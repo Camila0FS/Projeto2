@@ -1,27 +1,34 @@
-# Programa 2 - criando planilhas 
-# Descrição:
-# Este programa criando planilhas dentro do arquivo orçamento.xls
-
-# Autor: Camila Freitas Sant Ana
-# Versão: 0.0.5 # Data: 13/09/2022
-
-# Anotações: Planilhas: • receitas • despesas • resultados
-
-# Abrir terminal - via jupiter notebook
-# C:\Users\Users> cd projeto1
-# C:\Users\Users\projeto1> ls (listou os arquivos)
-# C:\Users\Users\projeto1> cd planilhas
-# C:\Users\Users\projeto1\planilhas> ls (listou os arquivos)
-
-# no jupiter notebook new ipykernel - renomeado Projeto2.py
-
-# usando o pacote pacote openpyxl
-
-from openpyxl import Workbook
-
-wb = Workbook()
-
-for planilha in ["receitas", "despesas", "resultado"]:
-    wb.create_sheet(planilha)
-
-wb.save("orcamento.xlsx")
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "# Programa 2 - criando planilhas \n# Descrição:\n# Este programa criando planilhas dentro do arquivo orçamento.xls\n\n# Autor: Camila Freitas Sant Ana\n# Versão: 0.0.5 # Data: 13/09/2022\n\n# Anotações: Planilhas: • receitas • despesas • resultados\n\n# Abrir terminal - via jupiter notebook\n# C:\\Users\\Users> cd projeto1\n# C:\\Users\\Users\\projeto1> ls (listou os arquivos)\n# C:\\Users\\Users\\projeto1> cd planilhas\n# C:\\Users\\Users\\projeto1\\planilhas> ls (listou os arquivos)\n\n# no jupiter notebook new ipykernel - renomeado Projeto2.py\n\n# usando o pacote pacote openpyxl\n\nfrom openpyxl import Workbook\n\nwb = Workbook()\n\nfor planilha in [\"receitas\", \"despesas\", \"resultado\"]:\n    wb.create_sheet(planilha)\n\nwb.save(\"orcamento.xlsx\")\n    ",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
